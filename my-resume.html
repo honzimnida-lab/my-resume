@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Khongorzul Erkhembayar</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa6b2; --accent:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --max-width:900px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:linear-gradient(180deg,#071029 0%, #0b1522 100%); color:#e6eef6; -webkit-font-smoothing:antialiased; padding:40px; display:flex; align-items:flex-start; justify-content:center;
+    }
+    .container{
+      width:100%; max-width:var(--max-width); background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; box-shadow:0 10px 30px rgba(2,6,23,0.7); overflow:hidden; display:grid; grid-template-columns:320px 1fr;
+    }
+    .sidebar{background:var(--card); padding:28px; display:flex; flex-direction:column; gap:20px}
+    .avatar{width:96px;height:96px;border-radius:14px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--accent);font-size:28px}
+    .contact small{color:var(--muted);display:block;margin-bottom:6px}
+    .section-title{font-size:12px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px}
+    .skill{display:flex;flex-direction:column;gap:8px}
+    .skill .bar{height:8px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+    .skill .fill{height:100%;background:linear-gradient(90deg,var(--accent),#3b82f6);border-radius:999px}
+    .sidebar .muted{color:var(--muted);font-size:14px}
+    .main{padding:28px}
+    header h1{margin:0;font-size:28px}
+    header p{margin:6px 0 16px;color:var(--muted)}
+    .job{margin-bottom:18px}
+    .job h3{margin:0;font-size:16px}
+    .job .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+    ul{margin:8px 0 0 18px}
+    @media (max-width:900px){
+      body{padding:20px}
+      .container{grid-template-columns:1fr;}
+      .sidebar{flex-direction:row;gap:14px;padding:18px}
+      .main{padding:18px}
+    }
+    @media print{
+      body{background:white;color:black}
+      .container{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <aside class="sidebar" aria-label="Sidebar">
+      <div style="display:flex;gap:16px;align-items:center">
+        <div class="avatar">KE</div>
+        <div>
+          <div style="font-weight:700;font-size:16px">Khongorzul Erkhembayar</div>
+          <div style="color:var(--muted);font-size:13px">Financial Management Student • INTJ</div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="section-title">Contact</div>
+        <div style="margin-top:8px">
+          <small>Email</small>
+          <div class="muted">khongorzul@example.com</div>
+        </div>
+        <div style="margin-top:8px">
+          <small>Phone</small>
+          <div class="muted">+976 9911 2233</div>
+        </div>
+        <div style="margin-top:8px">
+          <small>Location</small>
+          <div class="muted">Ulaanbaatar, Mongolia</div>
+        </div>
+        <div style="margin-top:8px">
+          <small>Website</small>
+          <div class="muted">github.com/khongorzul</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Skills</div>
+        <div style="margin-top:10px" class="skill">
+          <div style="display:flex;justify-content:space-between;font-size:13px"><span>Financial Analysis</span><span>85%</span></div>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+
+          <div style="display:flex;justify-content:space-between;font-size:13px"><span>Excel & VBA</span><span>80%</span></div>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+
+          <div style="display:flex;justify-content:space-between;font-size:13px"><span>Stata / R</span><span>70%</span></div>
+          <div class="bar"><div class="fill" style="width:70%"></div></div>
+
+          <div style="display:flex;justify-content:space-between;font-size:13px"><span>Presentation</span><span>90%</span></div>
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Education</div>
+        <div style="margin-top:8px">
+          <div style="font-weight:700">University of Finance and Economics</div>
+          <div class="muted">B.Sc. Financial Management — Expected 2026</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Languages</div>
+        <div style="margin-top:8px" class="muted">Mongolian (Native)<br/>English (B2)<br/>Chinese (Basic)</div>
+      </div>
+
+      <div style="margin-top:auto">
+        <div class="section-title">Interests</div>
+        <div style="margin-top:8px" class="muted">Cycling · Family baking business · Data analysis · Finance blogs</div>
+      </div>
+    </aside>
+
+    <section class="main">
+      <header>
+        <h1>Khongorzul Erkhembayar</h1>
+        <p>Second-year Financial Management student with internship experience in securities analysis, strong quantitative skills and a passion for corporate finance. Looking for part-time internship roles or project work in financial analysis and data-driven decision making.</p>
+      </header>
+
+      <article>
+        <div class="section-title">Experience</div>
+
+        <div class="job">
+          <h3>Financial Management Intern — Ölzii & Co (Internship)</h3>
+          <div class="meta">Mar 2025 — Present · Ulaanbaatar</div>
+          <ul>
+            <li>Performed in-depth company analysis and assisted in creating valuation models for potential equity investments.</li>
+            <li>Prepared weekly market summary reports and presented findings to senior analysts.</li>
+            <li>Automated parts of the data-cleaning process using Excel/VBA, saving ~6 hours/week.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Research Assistant — University Project</h3>
+          <div class="meta">Sep 2024 — Dec 2024 · Ulaanbaatar</div>
+          <ul>
+            <li>Collected and analyzed commuter satisfaction data for a public transport study; conducted descriptive statistics and wrote sections of the report.</li>
+            <li>Presented results in a 10-minute class presentation and answered methodological questions about sampling.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article style="margin-top:18px">
+        <div class="section-title">Projects</div>
+        <div style="margin-top:10px">
+          <h3>Holly Fashions Case Analysis — Group Project</h3>
+          <div class="meta">Apr 2025</div>
+          <ul>
+            <li>Led financial ratio analysis and created a 3-year forecast model to recommend strategic options to management.</li>
+          </ul>
+
+          <h3 style="margin-top:10px">American Express 2024 Report — Translation</h3>
+          <div class="meta">May 2025</div>
+          <ul>
+            <li>Worked on translating sections of the annual report to Mongolian (confidential project excerpt for class practice).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article style="margin-top:18px">
+        <div class="section-title">Education & Awards</div>
+        <div style="margin-top:8px">
+          <h3>Relevant Coursework</h3>
+          <div class="muted">Corporate Finance · Econometrics · Financial Accounting · Investment Analysis</div>
+          <h3 style="margin-top:10px">Awards</h3>
+          <div class="muted">Dean's List (2024) · 2nd place — University Finance Case Competition (2025)</div>
+        </div>
+      </article>
+
+      <footer style="margin-top:22px;color:var(--muted);font-size:13px">
+        References available upon request · Last updated: Sep 21, 2025
+      </footer>
+    </section>
+  </div>
+</body>
+</html>
